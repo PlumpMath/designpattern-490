@@ -1,4 +1,4 @@
-package com.amos.first;
+package com.amos.chain.first;
 
 import java.util.ArrayList;
 import java.util.List;

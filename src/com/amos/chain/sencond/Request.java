@@ -1,4 +1,4 @@
-package com.amos.sencond;
+package com.amos.chain.sencond;
 
 public class Request {
 	String requestStr;

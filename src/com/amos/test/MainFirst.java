@@ -1,8 +1,8 @@
 package com.amos.test;
 
-import com.amos.first.FilterChain;
-import com.amos.first.HTMLFilter;
-import com.amos.first.SensitiveFilter;
+import com.amos.chain.first.FilterChain;
+import com.amos.chain.first.HTMLFilter;
+import com.amos.chain.first.SensitiveFilter;
 
 public class MainFirst {
 	public static void main(String[] args) {

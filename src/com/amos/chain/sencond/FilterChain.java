@@ -1,4 +1,4 @@
-package com.amos.sencond;
+package com.amos.chain.sencond;
 
 import java.util.ArrayList;
 import java.util.List;

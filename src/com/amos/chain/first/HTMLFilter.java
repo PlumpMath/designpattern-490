@@ -1,4 +1,4 @@
-package com.amos.first;
+package com.amos.chain.first;
 
 public class HTMLFilter implements Filter {
 

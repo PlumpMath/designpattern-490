@@ -1,10 +1,10 @@
 package com.amos.test;
 
-import com.amos.sencond.FilterChain;
-import com.amos.sencond.HTMLFilter;
-import com.amos.sencond.Request;
-import com.amos.sencond.Response;
-import com.amos.sencond.SensitiveFilter;
+import com.amos.chain.sencond.FilterChain;
+import com.amos.chain.sencond.HTMLFilter;
+import com.amos.chain.sencond.Request;
+import com.amos.chain.sencond.Response;
+import com.amos.chain.sencond.SensitiveFilter;
 
 public class MainSecond {
 	public static void main(String[] args) {
