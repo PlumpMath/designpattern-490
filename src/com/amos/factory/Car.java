@@ -4,12 +4,15 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Car implements Moveable {
-	
+
 	public void run() {
-		System.out.println("车正在路上跑....");
+		System.out.println("汽车正在路上跑....");
 	}
 
-	private Car() {
+	// private Car() {
+	// }
+
+	public Car() {
 	}
 
 	// 单例模式
