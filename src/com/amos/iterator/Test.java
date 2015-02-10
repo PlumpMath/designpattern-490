@@ -30,7 +30,10 @@ public class Test {
 		for (int i = 0; i < 30; i++) {
 			list.add(i);
 		}
-		System.out.println(list.get(4));
-
+		
+		for (int i = 0; i < 30; i++) {
+			System.out.println(list.get(i));
+		}
+		
 	}
 }

@@ -1,6 +1,6 @@
 package com.amos.iterator;
 
-public class LinkedList implements Collection{
+public class LinkedList implements Collection {
 
 	Node head = null;
 	Node tail = null;
@@ -23,9 +23,12 @@ public class LinkedList implements Collection{
 
 	@Override
 	public Object get(int i) {
-		Node oo=head.getNext();
-		for(int x=1;x<i;x++){
-			oo = oo.getNext(); 
+		Node oo = head.getNext();
+		if(i==0){
+			oo=head;
+		}
+		for (int x = 1; x < i; x++) {
+			oo = oo.getNext();
 		}
 		return oo.getData();
 	}
