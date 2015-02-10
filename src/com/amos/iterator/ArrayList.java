@@ -19,5 +19,9 @@ public class ArrayList implements Collection{
 	public int size(){
 		return index;
 	}
-	
+
+	@Override
+	public Object get(int i) {
+		return objs[i];
+	}
 }

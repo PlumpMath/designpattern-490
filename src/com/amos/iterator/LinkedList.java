@@ -21,4 +21,12 @@ public class LinkedList implements Collection{
 		return size;
 	}
 
+	@Override
+	public Object get(int i) {
+		Node oo=head.getNext();
+		for(int x=1;x<i;x++){
+			oo = oo.getNext(); 
+		}
+		return oo.getData();
+	}
 }
