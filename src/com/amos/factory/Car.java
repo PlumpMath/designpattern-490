@@ -1,7 +1,5 @@
 package com.amos.factory;
 
-import java.util.ArrayList;
-import java.util.List;
 
 public class Car implements Moveable {
 
@@ -19,7 +17,7 @@ public class Car implements Moveable {
 	private static Car car;
 
 	// 多例模式 --连接池
-	private static List<Car> cars = new ArrayList<Car>();
+//	private static List<Car> cars = new ArrayList<Car>();
 
 	public static Car newInsatance() {
 
