@@ -1,6 +1,6 @@
 package com.amos.iterator;
 
-public class ArrayList {
+public class ArrayList implements Collection{
 	Object[] objs = new Object[10];
 	int index =0;
 	public void add(Object o){

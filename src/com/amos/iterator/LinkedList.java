@@ -1,6 +1,6 @@
 package com.amos.iterator;
 
-public class LinkedList {
+public class LinkedList implements Collection{
 
 	Node head = null;
 	Node tail = null;

@@ -12,7 +12,14 @@ public class Test {
 		//
 
 		// test2
-		LinkedList list = new LinkedList();
+//		LinkedList list = new LinkedList();
+//		for (int i = 0; i < 30; i++) {
+//			list.add(i);
+//		}
+//		System.out.println(list.size());
+		
+		//test3
+		Collection list = new LinkedList();
 		for (int i = 0; i < 30; i++) {
 			list.add(i);
 		}
