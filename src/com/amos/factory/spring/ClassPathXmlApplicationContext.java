@@ -1,5 +1,8 @@
 package com.amos.factory.spring;
 
+import java.util.HashMap;
+import java.util.Map;
+
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 
@@ -23,6 +26,8 @@ public class ClassPathXmlApplicationContext {
 		String classaName = "";
 
 		fileName = "D:\\develop\\DesignPattern\\src\\com\\amos\\factory\\spring\\applicationContext.xml";
+		
+		Map<String,String> container = new HashMap<String,String>();
 		DocumentBuilderFactory dbf = DocumentBuilderFactory.newInstance();
 		DocumentBuilder db = dbf.newDocumentBuilder();
 		Document document = db.parse(fileName);
@@ -30,17 +35,12 @@ public class ClassPathXmlApplicationContext {
 		NodeList beanNodes = element.getElementsByTagName("bean");
 		for (int i = 0; i < beanNodes.getLength(); i++) {
 			element = (Element) beanNodes.item(i);
-			String id = element.getAttribute("id");
-
-			if (id.equals(idName)) {
-				classaName = element.getAttribute("class");
-			}
+			container.put(element.getAttribute("id"), element.getAttribute("class"));
 		}
-
-		Class<?> cls = Class.forName(classaName);
+		
+		Class<?> cls = Class.forName(container.get(idName));
 		Object newInstance =cls.newInstance();
 		cls.getMethods()[0].invoke(newInstance);
-
 	}
 
 }
