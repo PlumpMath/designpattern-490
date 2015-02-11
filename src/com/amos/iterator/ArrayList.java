@@ -24,4 +24,28 @@ public class ArrayList implements Collection{
 	public Object get(int i) {
 		return objs[i];
 	}
+	
+	public Iterator iterator(){
+		return new ArrayListIterator();
+	}
+	
+	private class ArrayListIterator implements Iterator{
+		
+		int currentIndex=0;
+		
+		@Override
+		public boolean hasNext() {
+			if(currentIndex<index){
+				return true;
+			}
+			return false;
+		}
+
+		@Override
+		public Object next() {
+			Object o = objs[currentIndex];
+			currentIndex++;
+			return o;
+		}
+	}
 }
