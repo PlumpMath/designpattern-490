@@ -1,6 +1,6 @@
 package com.amos.iterator;
 
-public class ArrayList implements Collection{
+public class ArrayList<T> implements Collection{
 	Object[] objs = new Object[10];
 	int index =0;
 	public void add(Object o){
@@ -25,11 +25,11 @@ public class ArrayList implements Collection{
 		return objs[i];
 	}
 	
-	public Iterator iterator(){
-		return new ArrayListIterator();
+	public Iterator<T> iterator(){
+		return new ArrayListIterator<T>();
 	}
 	
-	private class ArrayListIterator implements Iterator{
+	private class ArrayListIterator<T> implements Iterator<T>{
 		
 		int currentIndex=0;
 		
@@ -42,8 +42,8 @@ public class ArrayList implements Collection{
 		}
 
 		@Override
-		public Object next() {
-			Object o = objs[currentIndex];
+		public T next() {
+			T o = (T) objs[currentIndex];
 			currentIndex++;
 			return o;
 		}

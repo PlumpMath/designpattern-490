@@ -37,7 +37,7 @@ public class LinkedList implements Collection {
 		return oo.getData();
 	}
 
-	public Iterator iterator() {
+	public Iterator<?> iterator() {
 
 		return new Iterator() {
 

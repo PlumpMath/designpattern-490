@@ -47,12 +47,23 @@ public class Test {
 //			System.out.println(it.next());
 //		}
 		
-		LinkedList list = new LinkedList();
-		for (int i = 0; i < 3; i++) {
+//		LinkedList list = new LinkedList();
+//		for (int i = 0; i < 3; i++) {
+//			list.add(i);
+//		}
+//		
+//		Iterator it = list.iterator();
+//		while(it.hasNext()){
+//			System.out.println(it.next());
+//		}
+		
+		// test6  对元素进行遍历
+		ArrayList<Integer> list = new ArrayList<Integer>();
+		for (int i = 0; i < 6; i++) {
 			list.add(i);
 		}
 		
-		Iterator it = list.iterator();
+		Iterator<Integer> it = list.iterator();
 		while(it.hasNext()){
 			System.out.println(it.next());
 		}
